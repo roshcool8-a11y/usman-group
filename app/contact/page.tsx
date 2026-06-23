@@ -1,4 +1,11 @@
+
 import Image from "next/image";
+import {
+  PhoneCall,
+  Mail,
+  MapPin,
+  Clock,
+} from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -34,40 +41,70 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Cards */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
+<section className="py-24 bg-[#FAFAFA]">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-            <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 text-center hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
-              <div className="text-5xl mb-4">📞</div>
-              <h3 className="text-xl font-bold mb-2">Call Us</h3>
-              <p className="text-gray-600">+971 XX XXX XXXX</p>
-            </div>
-
-            <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 text-center hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
-              <div className="text-5xl mb-4">✉️</div>
-              <h3 className="text-xl font-bold mb-2">Email Us</h3>
-              <p className="text-gray-600">info@usmangroup.com</p>
-            </div>
-
-            <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 text-center hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
-              <div className="text-5xl mb-4">📍</div>
-              <h3 className="text-xl font-bold mb-2">Location</h3>
-              <p className="text-gray-600">Dubai, UAE</p>
-            </div>
-
-            <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 text-center hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
-              <div className="text-5xl mb-4">🕒</div>
-              <h3 className="text-xl font-bold mb-2">Working Hours</h3>
-              <p className="text-gray-600">Mon - Sat</p>
-              <p className="text-gray-600">08:00 AM - 06:00 PM</p>
-            </div>
-
-          </div>
-
+      <div className="group bg-white rounded-[32px] p-8 border border-[#CC9900]/10 shadow-lg hover:-translate-y-3 hover:shadow-[0_20px_60px_rgba(204,153,0,0.18)] transition-all duration-500 text-center">
+        <div className="w-20 h-20 mx-auto mb-6 rounded-3xl bg-gradient-to-br from-[#CC9900] to-yellow-500 flex items-center justify-center shadow-lg">
+          <PhoneCall size={34} className="text-black" />
         </div>
-      </section>
+
+        <h3 className="text-2xl font-bold text-gray-900 mb-3">
+          Call Us
+        </h3>
+
+        <p className="text-gray-600">
+          +971 XX XXX XXXX
+        </p>
+      </div>
+
+      <div className="group bg-white rounded-[32px] p-8 border border-[#CC9900]/10 shadow-lg hover:-translate-y-3 hover:shadow-[0_20px_60px_rgba(204,153,0,0.18)] transition-all duration-500 text-center">
+        <div className="w-20 h-20 mx-auto mb-6 rounded-3xl bg-gradient-to-br from-[#CC9900] to-yellow-500 flex items-center justify-center shadow-lg">
+          <Mail size={34} className="text-black" />
+        </div>
+
+        <h3 className="text-2xl font-bold text-gray-900 mb-3">
+          Email Us
+        </h3>
+
+        <p className="text-gray-600">
+          info@usmangroup.com
+        </p>
+      </div>
+
+      <div className="group bg-white rounded-[32px] p-8 border border-[#CC9900]/10 shadow-lg hover:-translate-y-3 hover:shadow-[0_20px_60px_rgba(204,153,0,0.18)] transition-all duration-500 text-center">
+        <div className="w-20 h-20 mx-auto mb-6 rounded-3xl bg-gradient-to-br from-[#CC9900] to-yellow-500 flex items-center justify-center shadow-lg">
+          <MapPin size={34} className="text-black" />
+        </div>
+
+        <h3 className="text-2xl font-bold text-gray-900 mb-3">
+          Location
+        </h3>
+
+        <p className="text-gray-600">
+          Dubai, UAE
+        </p>
+      </div>
+
+      <div className="group bg-white rounded-[32px] p-8 border border-[#CC9900]/10 shadow-lg hover:-translate-y-3 hover:shadow-[0_20px_60px_rgba(204,153,0,0.18)] transition-all duration-500 text-center">
+        <div className="w-20 h-20 mx-auto mb-6 rounded-3xl bg-gradient-to-br from-[#CC9900] to-yellow-500 flex items-center justify-center shadow-lg">
+          <Clock size={34} className="text-black" />
+        </div>
+
+        <h3 className="text-2xl font-bold text-gray-900 mb-3">
+          Working Hours
+        </h3>
+
+        <p className="text-gray-600">Mon - Sat</p>
+        <p className="text-gray-600 mt-1">
+          08:00 AM - 06:00 PM
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* Contact Form */}
       <section className="py-24 bg-[#FAFAFA]">
